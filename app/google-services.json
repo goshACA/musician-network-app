@@ -1,0 +1,71 @@
+{
+  "project_info": {
+    "project_number": "264244105271",
+    "firebase_url": "https://musiciannetwork.firebaseio.com",
+    "project_id": "musiciannetwork",
+    "storage_bucket": "musiciannetwork.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:264244105271:android:7dfee592e3e4d5ec",
+        "android_client_info": {
+          "package_name": "com.musapp.musicapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "264244105271-nivio3q73fedp6emah7bpqeo3qu1d9oa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.musapp.musicapp",
+            "certificate_hash": "1f3fb982fdb836146a55cf02a030ab0f6d991e30"
+          }
+        },
+        {
+          "client_id": "264244105271-mog5ots78ikr6fhhac5gi55s9gntgg0q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.musapp.musicapp",
+            "certificate_hash": "5d2368511bbd977e3714480a22d613dacb33b20e"
+          }
+        },
+        {
+          "client_id": "264244105271-21oidv8dn05r08thq73gru3fbqo18fir.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.musapp.musicapp",
+            "certificate_hash": "ef66f6fac9c15ede2128beef249ec4daa297957e"
+          }
+        },
+        {
+          "client_id": "264244105271-r3psc41t75gu630oc21f7b3tqt4v2fi7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDY9ZfiWLYzoYANPUDBzIkOE25IiybFhGE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "264244105271-r3psc41t75gu630oc21f7b3tqt4v2fi7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

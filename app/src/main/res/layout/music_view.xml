@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/music_view_button_background"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="10dp"
+        android:id="@+id/relative_layout_music_play_button_container"
+        >
+
+        <Button
+            android:id="@+id/action_music_view_play_pause_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:background="@android:drawable/ic_media_play"
+            android:focusable="false"
+            android:clickable="false"/>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear_layout_music_title_container"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@id/relative_layout_music_play_button_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/relative_layout_music_play_button_container"
+        app:layout_constraintTop_toTopOf="@id/relative_layout_music_play_button_container">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_music_title"
+            android:text="@string/test_string_short"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/lightBlue"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_music_author"
+            android:textColor="@color/lightBlue"
+            android:text="@string/test_string_short"
+            android:layout_marginStart="30dp"
+            android:textSize="15sp"
+            android:textStyle="italic"/>
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/seek_bar_music_view_post_inner_recycler_view"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_music_duration"
+        android:text="@string/zero"
+        android:textSize="15sp"
+        android:textColor="@color/lightBlue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"/>
+
+
+
+
+</android.support.constraint.ConstraintLayout>

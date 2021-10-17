@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+   >
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_fragment_registration_1_fullname"
+        android:hint="@string/fullname"
+        style="@style/DefaultTextStyle"
+        android:layout_marginStart="@dimen/margin_horizontal_registration_edit_text"
+        android:layout_marginEnd="@dimen/margin_horizontal_registration_edit_text"
+        android:layout_marginTop="@dimen/margin_top_registration_edit_text"
+        android:paddingStart="@dimen/padding_horizontal_registration_edit_text"
+        android:paddingEnd="@dimen/padding_horizontal_registration_edit_text"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <EditText
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_fragment_registration_1_nickname"
+        android:hint="@string/nickname"
+        style="@style/DefaultTextStyle"
+        android:layout_marginStart="@dimen/margin_horizontal_registration_edit_text"
+        android:layout_marginEnd="@dimen/margin_horizontal_registration_edit_text"
+        android:layout_marginTop="@dimen/margin_top_registration_edit_text"
+        android:paddingStart="@dimen/padding_horizontal_registration_edit_text"
+        android:paddingEnd="@dimen/padding_horizontal_registration_edit_text"
+        app:layout_constraintTop_toBottomOf="@id/text_fragment_registration_1_fullname"
+     />
+    <Button
+
+        android:layout_width="@dimen/button_width_registration_button"
+        android:layout_height="wrap_content"
+        android:id="@+id/action_fragment_registration_1_next"
+        style="@style/NextButtonStyle"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toBottomOf="@id/text_fragment_registration_1_nickname"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorGreyDark">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image_view_edit_profile_fragment_profile_image"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginTop="@dimen/spinner_margin_top"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_person_black_24dp"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="2dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_edit_profile_fragment_email"
+                android:background="@color/colorGreyCards"
+                android:textColor="@color/lightBlue"
+                android:layout_marginStart="@dimen/margin_edit_profile_view"
+                android:layout_marginTop="@dimen/margin_edit_profile_view"
+                android:layout_marginEnd="@dimen/margin_edit_profile_view"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="User: a@mail.ru"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_edit_profile_view"
+                android:background="@color/colorGreyCards"
+                android:textColor="@color/lightBlue"
+                android:textColorHint="@color/lightBlue"
+                app:hintTextAppearance="@style/TextLabel">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/lightBlue"
+                    android:paddingStart="@dimen/padding_horizontal_registration_edit_text"
+                    android:paddingEnd="@dimen/padding_horizontal_registration_edit_text"
+                    android:hint="@string/hint_fullname"
+                    android:textSize="20sp"
+                    android:id="@+id/edit_text_fragment_edit_profile_full_name"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_edit_profile_view"
+                android:layout_marginEnd="@dimen/margin_edit_profile_view"
+                android:layout_marginBottom="@dimen/margin_edit_profile_view"
+                android:background="@color/colorGreyCards"
+                android:textColorHint="@color/lightBlue"
+                android:textColor="@color/lightBlue"
+                app:hintTextAppearance="@style/TextLabel">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/lightBlue"
+                    android:textSize="20sp"
+                    android:paddingStart="@dimen/padding_horizontal_registration_edit_text"
+                    android:paddingEnd="@dimen/padding_horizontal_registration_edit_text"
+                    android:hint="@string/hint_nickname"
+                    android:id="@+id/edit_text_fragment_edit_profile_nickname"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_edit_profile_view"
+                android:layout_marginEnd="@dimen/margin_edit_profile_view"
+                android:layout_marginBottom="@dimen/margin_edit_profile_view"
+                android:background="@color/colorGreyCards"
+                android:inputType="none"
+                android:textColor="@color/lightBlue"
+                android:textColorHint="@color/lightBlue"
+                app:hintTextAppearance="@style/TextLabel">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/lightBlue"
+                    android:hint="@string/birthday"
+                    android:inputType="none"
+                    android:paddingStart="@dimen/padding_horizontal_registration_edit_text"
+                    android:paddingEnd="@dimen/padding_horizontal_registration_edit_text"
+                    android:editable="false"
+                    android:textSize="20sp"
+                    android:id="@+id/edit_text_fragment_edit_profile_birthday"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_profile_fragment_radio_group"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@id/date_fragment_registration_2_birth"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="20dp">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/action_fragment_edit_profile_male"
+                    android:text="@string/male"
+                    style="@style/DefaultTextStyle"
+                    android:layout_marginRight="50dp"
+                    android:checked="false"
+                    android:buttonTint="@color/lightBlue"
+                    />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/action_fragment_edit_profile_female"
+                    android:text="@string/female"
+                    style="@style/DefaultTextStyle"
+                    android:checked="false"
+                    android:buttonTint="@color/lightBlue"
+                    />
+            </RadioGroup>
+
+            <Spinner
+                android:id="@+id/spinner_edit_profile_fragment_profession_drop_down"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_edit_profile_view"
+                android:layout_marginTop="@dimen/spinner_margin_top"
+                android:layout_marginBottom="@dimen/spinner_margin_bottom"
+                android:background="@color/colorGreyCards"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:entries="@array/professions"
+                android:prompt="@string/profession_prompt"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/margin_edit_profile_view"
+                android:layout_marginEnd="@dimen/margin_edit_profile_view"
+                android:layout_marginBottom="@dimen/margin_edit_profile_view"
+                android:background="@color/colorGreyCards"
+                android:textColor="@color/lightBlue"
+                android:textColorHint="@color/lightBlue"
+                app:hintTextAppearance="@style/TextLabel">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/padding_horizontal_registration_edit_text"
+                    android:paddingEnd="@dimen/padding_horizontal_registration_edit_text"
+                    android:hint="@string/hint_additional_info"
+                    android:textSize="20sp"
+                    android:textColor="@color/lightBlue"
+                    android:id="@+id/edit_text_fragment_edit_profile_additional_info"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/margin_edit_profile_view"
+                android:layout_marginEnd="@dimen/margin_edit_profile_view"
+                android:layout_marginBottom="@dimen/margin_edit_profile_view"
+                android:background="@color/colorGreyCards"
+                android:textColor="@color/lightBlue"
+                android:textColorHint="@color/lightBlue"
+                app:hintTextAppearance="@style/TextLabel">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/padding_horizontal_registration_edit_text"
+                    android:paddingEnd="@dimen/padding_horizontal_registration_edit_text"
+                    android:hint="current password"
+                    android:textSize="20sp"
+                    android:id="@+id/edit_text_fragment_edit_profile_last_password"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/margin_edit_profile_view"
+                android:layout_marginEnd="@dimen/margin_edit_profile_view"
+                android:layout_marginBottom="@dimen/margin_edit_profile_view"
+                android:background="@color/colorGreyCards"
+                android:textColor="@color/lightBlue"
+                android:textColorHint="@color/lightBlue"
+                app:hintTextAppearance="@style/TextLabel">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/padding_horizontal_registration_edit_text"
+                    android:paddingEnd="@dimen/padding_horizontal_registration_edit_text"
+                    android:hint="@string/hint_password"
+                    android:textSize="20sp"
+                    android:inputType="textPassword"
+                    android:id="@+id/edit_text_fragment_edit_profile_password"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/margin_edit_profile_view"
+                android:layout_marginEnd="@dimen/margin_edit_profile_view"
+                android:layout_marginBottom="@dimen/margin_edit_profile_view"
+                android:background="@color/colorGreyCards"
+                android:textColor="@color/lightBlue"
+                android:textColorHint="@color/lightBlue"
+                app:hintTextAppearance="@style/TextLabel">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/padding_horizontal_registration_edit_text"
+                    android:paddingEnd="@dimen/padding_horizontal_registration_edit_text"
+                    android:hint="@string/hint_confirm_password"
+                    android:textSize="20sp"
+                    android:inputType="textPassword"
+                    android:id="@+id/edit_text_fragment_edit_profile_confirm_password"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:layout_width="@dimen/button_width_registration_button"
+                android:layout_height="wrap_content"
+                android:text="@string/save_button"
+                android:background="@drawable/button_backgrount"
+                android:layout_marginTop="@dimen/margin_edit_profile_view"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/action_edit_profile_fragment_save"/>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/progress_bar_edit_profile"
+        android:indeterminate="true"
+        android:visibility="gone"/>
+
+</android.support.constraint.ConstraintLayout>

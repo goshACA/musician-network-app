@@ -1,0 +1,134 @@
+<resources>
+    <string name="app_name">Carambola</string>
+    <string name="fullname">Fullname</string>
+    <string name="nickname">Nickname</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="next">Next</string>
+    <string name="empty_error_message">Field is empty</string>
+    <string name="fullname_one_word_error_message">Please, enter your name and surname </string>
+    <string name="wrong_email_message">Entered email is wrong</string>
+    <string name="password_match">Password doesn\'t match</string>
+    <string name="remember_me">Keep me signed in</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_up">Sign up</string>
+    <string name="forgot_pass">Forgot password</string>
+    <string name="quit">Quit</string>
+    <string name="confirm">Confirm</string>
+    <string name="sent_again">Sent again</string>
+    <string name="enter_code">Enter code</string>
+    <string name="sign_in_with">Sign in with:</string>
+    <string name="settings_char">:</string>
+    <string name="more_info">more information...</string>
+
+    <string name="profession_prompt">Choose your profession</string>
+    <string name="login_button_text">Next</string>
+    <string name="additional_info_text_hint">Tell something about yourself...</string>
+    <string name="profile">Profile</string>
+
+    <string name="comment_hint">Comment...</string>
+    <string name="dialog_email_info">Please enter your email addres. We\'ll sent you a code. </string>
+
+    <string-array name="search_modes">
+        <item>Search by Posts</item>
+        <item>Search by UserName</item>
+    </string-array>
+
+    <string name="sort">Sort by</string>
+
+    <string-array name="professions">
+        <item>Singer/Vocalist</item>
+        <item>Record Producer</item>
+        <item>Composer</item>
+        <item>Songwriter</item>
+        <item>Critic</item>
+        <item>Pianist</item>
+        <item>Rapper</item>
+        <item>Bassoonist</item>
+        <item>Cellist</item>
+        <item>Electronic musician</item>
+        <item>Flautist</item>
+        <item>Guitarist</item>
+        <item>Keyboardist</item>
+        <item>Organist</item>
+        <item>Saxophonist</item>
+        <item>Trumpet player</item>
+        <item>Violinist</item>
+        <item>Bassist</item>
+        <item>Hornist</item>
+        <item>Organ grinder</item>
+        <item>Drummer</item>
+        <item>Bandurist</item>
+    </string-array>
+    <string name="title_activity_app_main">AppMainActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <string name="action_edit_profile_info">edit profile info</string>
+    <string name="action_notification">notification</string>
+    <string name="action_about_us">about us</string>
+    <string name="action_feedback">feedback</string>
+    <string name="action_log_out">log out</string>
+    <string name="toolbar_title_profile">Profile</string>
+    <string name="title_about_us">About us</string>
+    <string name="title_activity_app">AppActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_edit_profile">Edit</string>
+
+    <string name="text_bottom_navigation_item_home">Home</string>
+    <string name="text_bottom_navigation_item_messages">Messages</string>
+    <string name="text_bottom_navigation_item_notification">Notification</string>
+    <string name="text_bottom_navigation_item_profile">Profile</string>
+    <string name="test_string_long">Test Test 11</string>
+    <string name="test_string_short">test</string>
+    <string name="zero">0</string>
+    <string name="test_sentence">ajimbf gtowf jgrdigk jdrgks lkjg qwq kothfln</string>
+    <string name="favorite_pop_up_menu_title">Save to favorite</string>
+    <string name="search_bar_title_menu">Search</string>
+    <string name="add_post_action_bar_title_menu">New Post</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_opened_post">Wall post</string>
+    <string name="save">Post</string>
+    <string name="back">Back</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hint_fullname">Full Name</string>
+    <string name="hint_nickname">NickName</string>
+    <string name="gender">Gender</string>
+    <string name="birthday">Birthday</string>
+    <string name="profession">Profession</string>
+    <string name="hint_additional_info">About me</string>
+    <string name="save_button">Save</string>
+    <string name="hint_password">new password</string>
+    <string name="hint_confirm_password">confirm</string>
+
+    <string name="about_us_info_text">
+        Owner: CARAMBOLA corporation\n
+        CARAMBOLA for Android emd65-55C\n
+        App version 0.1.1\n
+
+    </string>
+
+    <string name="about_us_email_link">
+        Feedback: Our email
+    </string>
+    <string name="about_us_git_link">
+        Our GitHub Link.
+    </string>
+
+    <string name="carambola_copyright">©Copyright Carampola™ 2019</string>
+    <string name="facebook_app_id">379902902614605</string>
+    <string name="fb_login_protocol_scheme">fb379902902614605</string>
+
+    <string name="short_password_error">at least 6 character</string>
+    <string name="invalid_password_error">password not secure(must contain numbers, 1 Alphabet, 1 special character)</string>
+
+    <string name="message_hint">type a message</string>
+
+</resources>

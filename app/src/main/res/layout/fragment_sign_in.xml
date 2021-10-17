@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/text_fragment_sign_in_email"
+        style="@style/DefaultTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_horizontal_registration_edit_text"
+        android:layout_marginEnd="@dimen/margin_horizontal_registration_edit_text"
+        android:layout_marginTop="@dimen/margin_top_registration_edit_text"
+        android:paddingStart="@dimen/padding_horizontal_registration_edit_text"
+        android:paddingEnd="@dimen/padding_horizontal_registration_edit_text"
+        android:hint="@string/email"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/text_fragment_sign_in_password"
+        style="@style/DefaultTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_horizontal_registration_edit_text"
+        android:layout_marginEnd="@dimen/margin_horizontal_registration_edit_text"
+        android:layout_marginTop="@dimen/margin_top_registration_edit_text"
+        android:paddingStart="@dimen/padding_horizontal_registration_edit_text"
+        android:paddingEnd="@dimen/padding_horizontal_registration_edit_text"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@id/text_fragment_sign_in_email" />
+
+    <CheckBox
+        android:id="@+id/check_fragment_sign_in_remember"
+        style="@style/DefaultTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_horizontal_registration_edit_text"
+        android:layout_marginEnd="@dimen/margin_horizontal_registration_edit_text"
+        android:layout_marginTop="@dimen/margin_top_registration_edit_text"
+        android:paddingStart="@dimen/padding_horizontal_registration_edit_text"
+        android:paddingEnd="@dimen/padding_horizontal_registration_edit_text"
+
+        android:text="@string/remember_me"
+        android:buttonTint="@color/textBlue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_fragment_sign_in_password" />
+
+    <Button
+        android:id="@+id/action_fragment_sign_in_sign_in"
+        style="@style/DefaultTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_horizontal_registration_edit_text"
+        android:layout_marginEnd="@dimen/margin_horizontal_registration_edit_text"
+        android:layout_marginTop="@dimen/margin_top_registration_edit_text"
+        android:paddingStart="@dimen/padding_horizontal_registration_edit_text"
+        android:paddingEnd="@dimen/padding_horizontal_registration_edit_text"
+        android:background="@android:color/transparent"
+        android:text="@string/sign_in"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/check_fragment_sign_in_remember" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_fragment_sign_in_buttons"
+        android:orientation="horizontal"
+        android:layout_marginTop="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.578"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/action_fragment_sign_in_sign_in"
+      >
+
+        <Button
+            android:id="@+id/action_fragment_sign_in_sign_up"
+            style="@style/DefaultTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginEnd="10dp"
+            android:background="@android:color/transparent"
+            android:text="@string/sign_up"
+            />
+
+        <Button
+            android:id="@+id/action_fragment_sign_in_forgot_pass"
+            style="@style/DefaultTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginStart="10dp"
+            android:background="@android:color/transparent"
+            android:text="@string/forgot_pass" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/layout_fragment_sign_in_buttons"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp"
+        >
+       <!--> <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" /><-->
+        <Button
+            android:id="@+id/action_fragment_sign_in_facebook"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="35dp"
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/facebook" />
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/twitter"
+            android:layout_marginEnd="35dp"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"
+            android:id="@+id/action_fragment_sign_in_twitter"/>
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/google_plus"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"
+            android:id="@+id/action_fragment_sign_in_google_plus"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

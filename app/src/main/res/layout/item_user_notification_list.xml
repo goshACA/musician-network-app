@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:background="@color/colorGreyCards">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_item_user_notification_others_pic"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="15sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Published new comment"
+                android:textColor="@color/colorDarkSecondaryText"
+                android:layout_marginStart="20dp"/>
+
+            <TextView
+                android:id="@+id/text_item_user_notification_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/action_notification"
+                android:layout_marginStart="20dp"
+                android:textColor="@color/colorDarkPrimaryText"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/text_item_user_notification_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/action_notification"
+                android:layout_marginStart="20dp"
+                android:textColor="@color/colorDarkSecondaryText"
+               />
+            <TextView
+                android:id="@+id/text_item_user_notification_body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/action_notification"
+                android:layout_marginStart="20dp"
+                android:textColor="@color/colorDarkSecondaryText"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                />
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

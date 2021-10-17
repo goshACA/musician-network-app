@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/user_profile_inner_constraint_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/colorGreyCards">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circular_view_fragment_user_profile_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:src="@drawable/ic_person_black_24dp"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/layout_fragment_user_profile_info"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/circular_view_fragment_user_profile_image"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+
+                android:id="@+id/text_fragment_user_profile_fullname"
+                style="@style/InfoBoxTextStyle"
+                android:layout_gravity="start"
+                android:text="@string/fullname" />
+
+            <TextView
+                android:id="@+id/text_fragment_user_profile_nickname"
+                style="@style/InfoBoxTextStyle"
+                android:layout_gravity="start"
+                android:text="@string/nickname" />
+
+            <TextView
+                android:id="@+id/text_fragment_user_profile_more_info"
+                style="@style/InfoBoxTextStyle"
+                android:layout_gravity="start"
+                android:text="@string/more_info"
+                android:textSize="15sp"
+                android:textColor="@color/colorDarkSecondaryText"/>
+
+        </LinearLayout>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <FrameLayout
+        android:id="@+id/user_post_frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorGreyCards"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_profile_inner_constraint_layout">
+
+        <TextView
+            android:id="@+id/text_fragment_user_profile_info_box"
+            style="@style/InfoBoxTextStyle"
+            android:text="@string/more_info"
+            android:paddingBottom="15dp"
+            android:visibility="gone"/>
+
+    </FrameLayout>
+
+    <android.support.design.widget.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tab_layout_user_profile_fragment"
+        app:tabTextColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/user_post_frame_layout"
+        android:background="@color/colorGreyCards"/>
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tab_layout_user_profile_fragment"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/view_pager_user_profile_fragment" />
+
+    <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:id="@+id/recycler_fragment_profile_user_posts"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@id/user_post_frame_layout">-->
+
+    <!--</android.support.v7.widget.RecyclerView>-->
+
+
+</android.support.constraint.ConstraintLayout>

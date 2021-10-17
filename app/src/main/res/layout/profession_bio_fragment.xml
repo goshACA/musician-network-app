@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register_background">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circular_view_profession_fragment_profile_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginTop="@dimen/spinner_margin_top"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_person_black_24dp"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner_profession_fragment_profession_drop_down"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spinner_margin_horizontal"
+        android:layout_marginEnd="@dimen/spinner_margin_horizontal"
+        android:layout_marginTop="@dimen/spinner_margin_top"
+        android:layout_marginBottom="@dimen/spinner_margin_bottom"
+        android:background="#20FFFFFF"
+        android:entries="@array/professions"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:prompt="@string/profession_prompt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/circular_view_profession_fragment_profile_image">
+
+    </Spinner>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/spinner_margin_horizontal"
+        android:src="@android:drawable/arrow_down_float"
+        app:layout_constraintBottom_toBottomOf="@+id/spinner_profession_fragment_profession_drop_down"
+        app:layout_constraintEnd_toEndOf="@+id/spinner_profession_fragment_profession_drop_down"
+        app:layout_constraintTop_toTopOf="@+id/spinner_profession_fragment_profession_drop_down" />
+
+    <EditText
+        android:id="@+id/text_profession_fragment_user_info"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginHorizontal="@dimen/spinner_margin_horizontal"
+        android:layout_marginTop="@dimen/info_text_view_margin_top"
+        android:background="#20FFFFFF"
+        android:gravity="top"
+        android:hint="@string/additional_info_text_hint"
+        android:textSize="20sp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_profession_fragment_profession_drop_down" />
+
+
+</android.support.constraint.ConstraintLayout>

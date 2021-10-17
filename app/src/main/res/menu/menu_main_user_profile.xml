@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.musapp.musicapp.activities.AppMainActivity">
+
+    <item
+        android:id="@+id/action_edit_profile_info"
+        android:title="@string/action_edit_profile_info"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_notification"
+        android:title="@string/action_notification"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_about_us"
+        android:title="@string/action_about_us"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/action_log_out"
+        android:title="@string/action_log_out"
+        app:showAsAction="never"
+        />
+
+</menu>

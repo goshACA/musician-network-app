@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+        <EditText
+            android:id="@+id/text_fragment_registration_5_email"
+            style="@style/DefaultTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_horizontal_registration_edit_text"
+            android:layout_marginEnd="@dimen/margin_horizontal_registration_edit_text"
+            android:layout_marginTop="@dimen/margin_top_registration_edit_text"
+            android:paddingStart="@dimen/padding_horizontal_registration_edit_text"
+            android:paddingEnd="@dimen/padding_horizontal_registration_edit_text"
+            android:hint="@string/email"
+            app:layout_constraintTop_toTopOf="parent"
+          />
+
+        <EditText
+            android:id="@+id/text_fragment_registration_5_password"
+            style="@style/DefaultTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_horizontal_registration_edit_text"
+            android:layout_marginEnd="@dimen/margin_horizontal_registration_edit_text"
+            android:layout_marginTop="@dimen/margin_top_registration_edit_text"
+            android:paddingStart="@dimen/padding_horizontal_registration_edit_text"
+            android:paddingEnd="@dimen/padding_horizontal_registration_edit_text"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            app:layout_constraintTop_toBottomOf="@id/text_fragment_registration_5_email" />
+
+        <EditText
+            android:id="@+id/text_fragment_registration_5_confirm_pass"
+            style="@style/DefaultTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_horizontal_registration_edit_text"
+            android:layout_marginEnd="@dimen/margin_horizontal_registration_edit_text"
+            android:layout_marginTop="@dimen/margin_top_registration_edit_text"
+            android:paddingStart="@dimen/padding_horizontal_registration_edit_text"
+            android:paddingEnd="@dimen/padding_horizontal_registration_edit_text"
+            android:hint="@string/confirm_password"
+            android:inputType="textPassword"
+            app:layout_constraintTop_toBottomOf="@id/text_fragment_registration_5_password"/>
+
+        <Button
+            android:id="@+id/action_fragment_registration_5_next"
+            style="@style/NextButtonStyle"
+            android:layout_width="@dimen/button_width_registration_button"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/text_fragment_registration_5_confirm_pass"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+</android.support.constraint.ConstraintLayout>
